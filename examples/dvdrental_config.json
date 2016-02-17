@@ -1,0 +1,21 @@
+{
+  "name": "nativesync_test",
+  "base_url": "http://nick.nativeapi.io",
+  "partition_strategy": "client_id",
+  "secret_key": "yeah_yo",
+  "db_connection": "postgres://nickbryant@localhost:5432/dvdrental",
+  "date_format": "YY-mm-dd HH:ii:ss",
+  "auto_update_ts": true,
+  "sync_objects": {
+    "actor": {
+      "table_name": "actor",
+      "client_id": "first_name",
+      "primary_key": "actor_id",
+      "update_timestamp": "last_update"
+      "foreign_keys": {
+        "derp_id" => {"nullable" => false, "object_name" => "derp"},
+        "herp_id" => {"nullable" => false, object_name" => "herp"}
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "nativesync_test",
+  "partition_strategy": "db_server_per_client",
+  "secret_key": "poosh",
+  "db_connection": "postgres://nickbryant@{{client_db_server}}:5432/{{client_db_name}}",
+}

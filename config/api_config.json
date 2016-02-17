@@ -1,0 +1,13 @@
+{
+  "name": "nativesync_test",
+  "secret_key": "ultimate",
+  "db_connection": "postgres://nickbryant@localhost:5432/ns",
+  "date_format": "YY-mm-dd HH:ii:ss",
+  "sync_objects": {
+    "lead": {
+      "client_id": "companyProfileID",
+      "primary_key": "id",
+      "update_timestamp": "updateTimestamp"
+    }
+  }
+}

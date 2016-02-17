@@ -1,0 +1,32 @@
+# for the case when you get custom fields in a REALLY weird way (and you should be ashamed.)
+# (unless you're using nosql.)
+{
+  "name": "sharpspring",
+  "partition_strategy": "client_id",
+  "secret_key": "springsharp",
+  "db_connection": "postgres://nickbryant@localhost:5432/dvdrental",
+  "date_format": "YY-mm-dd HH:ii:ss",
+  "auto_update_ts": true,
+  "sync_objects": {
+    "lead": {
+      "table_name": "lead",
+      "client_id": "companyProfileID",
+      "primary_key": "id",
+      "update_timestamp": "updateTimestamp"
+      "custom_functions": {
+        "get" => "Lead::Get",
+        "getRecent" => "Lead::GetRecent",
+        "update" => "Lead::Update",
+        "create" => "Lead::Create",
+        "delete" => "Lead::Delete"
+        }
+      ]
+    },
+    "opportunity": {
+      "table_name": "opportunity",
+      "client_id": "companyProfileID",
+      "primary_key": "id",
+      "update_timestamp": "updateTimestamp"
+    }
+  }
+}

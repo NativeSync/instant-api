@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -x
+
+CMD=$@
+
+bundle install
+
+if [[ "$CMD" != "" ]]; then
+    $CMD
+fi
