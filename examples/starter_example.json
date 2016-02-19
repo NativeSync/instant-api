@@ -11,10 +11,10 @@
       "table_name": "actor",
       "client_id": "first_name",
       "primary_key": "actor_id",
-      "update_timestamp": "last_update"
+      "update_timestamp": "last_update",
       "foreign_keys": {
-        "derp_id" => {"nullable" => false, "object_name" => "derp"},
-        "herp_id" => {"nullable" => false, object_name" => "herp"}
+        "derp_id": {"nullable": false, "object_name": "derp"},
+        "herp_id": {"nullable": false, "object_name": "herp"}
       }
     }
   }
