@@ -1,6 +1,6 @@
 # Native API
 
-Native API is a JSON-configured REST API written in Santra. It's extremely lightweight. Just supply a connection configuration file and you're off.
+Native API is a JSON-configured REST API written in Santra. It's extremely lightweight. The target market is people who want to generate a SIMPLE REST API straight from their database with no code required. Just supply a connection configuration file and you're off.
 
 Native API is a work in progress - star the repo and check back soon.
 
